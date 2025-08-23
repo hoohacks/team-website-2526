@@ -148,7 +148,7 @@ export default function Hero() {
         className="w-full h-24 absolute bottom-0"
       />
       <div className="flex flex-col absolute left-0 top-0 px-10 xl:px-30 w-full h-screen items-end">
-        <img src={logo} id="hoohacks-logo" alt="HooHacks Logo" className="block w-xlg m-auto bg-inherit z-10" />
+        <img src={logo} id="hoohacks-logo" alt="HooHacks Logo" className="block w-xlg m-auto bg-inherit z-10 mt-20" />
         <div className="flex flex-col-reverse xl:flex-row items-center xl:items-end w-full gap-20 justify-around">
           <div>
             <img

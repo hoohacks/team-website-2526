@@ -3,6 +3,7 @@ import Hero from "../hero/hero";
 import Events from "../events";
 import Committees from "../committees";
 import Sponsors from "~/sponsors";
+import Navbar from "~/navbar/navbar";
 
 export function meta({ }: Route.MetaArgs) {
   return [
@@ -13,6 +14,7 @@ export function meta({ }: Route.MetaArgs) {
 
 export default function Home() {
   return <div>
+    <Navbar></Navbar>
     <Hero />
     <Events />
     <Committees />
