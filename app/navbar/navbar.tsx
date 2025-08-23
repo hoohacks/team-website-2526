@@ -1,3 +1,5 @@
+import { Link } from "react-router";
+
 export default function Navbar() {
     const navItems = [
         { name: "Meet The Team", href: "/team" },
@@ -14,23 +16,22 @@ export default function Navbar() {
                     <ul className="flex space-x-8">
                         {navItems.map((item) => (
                             <li key={item.name}>
-                                <a
-                                    href={item.href}
+                                <Link
+                                    to={item.href}
                                     className="text-white hover:text-gray-300 transition"
                                 >
                                     {item.name}
-                                </a>
+                                </Link>
                             </li>
                         ))}
                     </ul>
 
                     {/* Join Button */}
-                    <a
-                        href="#join"
+                    <Link to="/join"
                         className="px-4 py-2 rounded-md font-medium text-gray-900 bg-[#B1CCFF] hover:bg-blue-500 transition-colors"
                     >
                         Join
-                    </a>
+                    </Link>
                 </div>
             </div>
         </nav>
