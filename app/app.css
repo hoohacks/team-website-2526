@@ -8,5 +8,6 @@
 html,
 body {
   background: linear-gradient(180deg, #000824 0%, #121A6A 100%);
+  min-height: 100vh;
   color-scheme: dark;
 }
