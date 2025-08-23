@@ -9,7 +9,9 @@ export default function Navbar() {
         <nav className="w-full absolute top-0 left-0 z-50 bg-transparent">
             <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
                 {/* Logo */}
-                <img src="app/navbar/hoohacks-owl-logo.svg" alt="Logo" />
+                <a href="/">
+                    <img src="app/navbar/hoohacks-owl-logo.svg" alt="Logo"/>
+                </a>
 
                 {/* Navigation Links + Button (grouped on right) */}
                 <div className="flex items-center space-x-12">

@@ -1,0 +1,52 @@
+[
+  {
+    "committee": "President",
+    "members": [
+      { "name": "Austin Trinh", "image": "https://placekitten.com/200/201" },
+      { "name": "?", "image": "https://placekitten.com/200/202" }
+    ]
+  },
+  {
+    "committee": "Technology",
+    "members": [
+      { "name": "Urav Tanna", "image": "https://placekitten.com/200/203" },
+      { "name": "Diana Lin", "image": "https://placekitten.com/200/204" },
+      { "name": "Dang Lee", "image": "https://placekitten.com/200/204" }
+    ]
+  },
+  {
+    "committee": "Finance",
+    "members": [
+      { "name": "Courtney", "image": "https://placekitten.com/200/205" },
+      { "name": "Christian", "image": "https://placekitten.com/200/205" }
+    ]
+  },
+  {
+    "committee": "Marketing",
+    "members": [
+      { "name": "Aryaa Deshpande", "image": "https://placekitten.com/200/206" },
+      { "name": "Richard Do", "image": "https://placekitten.com/200/206" }
+    ]
+  },
+  {
+    "committee": "Sponsorship",
+    "members": [
+      { "name": "Malisha", "image": "https://placekitten.com/200/207" },
+      { "name": "Jamar", "image": "https://placekitten.com/200/207" }
+    ]
+  },
+  {
+    "committee": "Hacker Experience",
+    "members": [
+      { "name": "Salonee", "image": "https://placekitten.com/200/208" },
+      { "name": "Christie", "image": "https://placekitten.com/200/208" }
+    ]
+  },
+  {
+    "committee": "Internal",
+    "members": [
+      { "name": "Christine", "image": "https://placekitten.com/200/208" },
+      { "name": "Jay", "image": "https://placekitten.com/200/208" }
+    ]
+  }
+]
