@@ -16,7 +16,7 @@ export default function Hero() {
   const [starsReady, setStarsReady] = useState(false);
   const [starStyles, setStarStyles] = useState<{ type: number, top: string; left: string; animationDelay: string; animationDuration: string; }[]>([]);
   const [cloudStyles, setCloudStyles] = useState<{ i: number; top: string; left: string; animationDuration: string; animationDelay: string; animationIterationCount: string; }[]>([]);
-  const seed = useRef(4);
+  const seed = useRef(6);
   const stars = [stars4, stars5, stars6];
 
   // Randomly generate stars
