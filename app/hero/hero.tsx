@@ -12,7 +12,7 @@ function random(seed: React.RefObject<number>) {
   return x - Math.floor(x);
 }
 
-export function Hero() {
+export default function Hero() {
   const [starsReady, setStarsReady] = useState(false);
   const [starStyles, setStarStyles] = useState<{ type: number, top: string; left: string; animationDelay: string; animationDuration: string; }[]>([]);
   const [cloudStyles, setCloudStyles] = useState<{ i: number; top: string; left: string; animationDuration: string; animationDelay: string; animationIterationCount: string; }[]>([]);
@@ -135,7 +135,7 @@ export function Hero() {
   }, [starElements]);
 
   return (
-    <div className="relative w-full h-screen overflow-hidden transition-opacity duration-1000" style={{ background: "linear-gradient(180deg, #000824 0%, #121A6A 100%)", opacity: starsReady ? 1 : 0 }}>
+    <div className="relative w-full h-screen overflow-hidden transition-opacity duration-1000" style={{ opacity: starsReady ? 1 : 0 }}>
       <style>
         {cloudKeyframes}
       </style>

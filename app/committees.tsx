@@ -1,0 +1,10 @@
+import SectionHeader from "./components/SectionHeader";
+
+export default function Events() {
+    return (
+        <div className="w-250 max-w-full flex flex-col m-auto">
+            <SectionHeader>Committees</SectionHeader>
+            hi (add stuff here)
+        </div>
+    );
+}
