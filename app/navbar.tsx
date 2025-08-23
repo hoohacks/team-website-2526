@@ -1,4 +1,5 @@
 import { Link } from "react-router";
+import hoohacksOwlLogo from "~/assets/hoohacks-owl-logo.svg";
 
 export default function Navbar() {
     const navItems = [
@@ -9,9 +10,7 @@ export default function Navbar() {
         <nav className="w-full absolute top-0 left-0 z-50 bg-transparent">
             <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
                 {/* Logo */}
-                <a href="/">
-                    <img src="app/navbar/hoohacks-owl-logo.svg" alt="Logo"/>
-                </a>
+                <img src={hoohacksOwlLogo} alt="Logo" />
 
                 {/* Navigation Links + Button (grouped on right) */}
                 <div className="flex items-center space-x-12">

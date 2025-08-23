@@ -3,7 +3,8 @@ import Hero from "../hero/hero";
 import Events from "../events";
 import Committees from "../committees";
 import Sponsors from "~/sponsors";
-import Navbar from "~/navbar/navbar";
+import Navbar from "~/navbar";
+import Footer from "~/footer/footer";
 
 export function meta({ }: Route.MetaArgs) {
   return [
@@ -19,5 +20,6 @@ export default function Home() {
     <Events />
     <Committees />
     <Sponsors />
+    <Footer />
   </div>;
 }

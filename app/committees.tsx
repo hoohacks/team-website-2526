@@ -31,7 +31,7 @@ export default function Events() {
     ];
 
     return (
-        <div className="w-250 max-w-full flex flex-col mx-auto my-8">
+        <div className="w-250 max-w-full flex flex-col mx-auto my-16">
             <SectionHeader>Committees</SectionHeader>
             <div className="flex flex-col gap-2 p-4">
                 {

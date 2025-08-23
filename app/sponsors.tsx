@@ -3,7 +3,7 @@ import SectionHeader from "./components/SectionHeader";
 
 export default function Sponsors() {
     return (
-        <div className="w-full my-8">
+        <div className="w-full mt-16 mb-32">
             <SectionHeader>Sponsors</SectionHeader>
             <ScrollingRow direction="right">
                 <div className="w-40 h-30 bg-gray-200"></div>
