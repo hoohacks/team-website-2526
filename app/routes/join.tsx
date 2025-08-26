@@ -18,22 +18,26 @@ export default function Join() {
                                 typically open
                                 for two weeks before interviews begin. No prior experience is required to apply!
                             </p>
-                            <button
-                                className="w-40 px-6 py-3 rounded-lg bg-[#B1CCFF] text-black font-semibold hover:bg-blue-500 transition">
-                                Join
-                            </button>
+                            <a href="">
+                                <button
+                                    className="w-40 px-6 py-3 rounded-lg bg-[#B1CCFF] text-black font-semibold hover:bg-blue-500 transition">
+                                    Join
+                                </button>
+                            </a>
                         </div>
 
                         {/* Newsletter Section */}
                         <div className="space-y-6 mt-30 mb-30">
                             <h1 className="text-5xl font-bold">Subscribe to our Newsletter</h1>
                             <p>Join our newsletter to get the latest HooHacks news, events, and opportunities.</p>
-                            <button
-                                type="submit"
-                                className="w-40 px-6 py-3 rounded-lg bg-[#B1CCFF] text-black font-semibold hover:bg-blue-500 transition"
-                            >
-                                Subscribe
-                            </button>
+                            <a href="https://hoohacks.us17.list-manage.com/subscribe?u=8db3fa0f566f9edea113259df&id=b74b5fd33d">
+                                <button
+                                    type="submit"
+                                    className="w-40 px-6 py-3 rounded-lg bg-[#B1CCFF] text-black font-semibold hover:bg-blue-500 transition"
+                                >
+                                    Subscribe
+                                </button>
+                            </a>
                         </div>
                     </div>
                 </div>
