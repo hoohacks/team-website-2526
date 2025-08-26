@@ -135,7 +135,7 @@ export default function Hero() {
   }, [starElements]);
 
   return (
-    <div className="relative w-full h-screen overflow-hidden transition-opacity duration-1000" style={{ opacity: starsReady ? 1 : 0 }}>
+    <div className="relative w-full h-screen overflow-x-hidden transition-opacity duration-1000" style={{ opacity: starsReady ? 1 : 0 }}>
       <style>
         {cloudKeyframes}
       </style>
@@ -149,14 +149,15 @@ export default function Hero() {
       />
       <div className="flex flex-col absolute left-0 top-0 px-10 xl:px-30 w-full h-screen gap-8 items-end">
         <img src={logo} id="hoohacks-logo" alt="HooHacks Logo" className="block w-xlg mx-auto mt-auto bg-inherit z-10" />
-        <div className="flex flex-col-reverse xl:flex-row items-center xl:items-end w-full gap-20 justify-around">
+        <div className="flex flex-col-reverse xl:flex-row items-center xl:items-end max-w-300 gap-20 justify-between mx-auto">
           <div>
             <img
               src={dome}
               alt="Dome"
+              width="450"
             />
           </div>
-          <div id="description" className="text-2xl text-center xl:text-left self-center xl:w-150 text-shadow-lg">
+          <div id="description" className="flex-1 text-2xl text-center xl:text-left self-center text-shadow-lg">
             CIO @ UVA. Foster entrepreneurship and innovation by making tech more accessible and fun at UVA and beyond!
           </div>
         </div>
