@@ -26,7 +26,7 @@ export default function Events() {
             title: "Ideathon",
             logo: ideathonLogo,
             date: "October",
-            href: "https://hoohacks.io",
+            href: "https://ideathon.hoohacks.io",
             image: null,
             children: <p>Pitch. Collaborate. Win. In just one day at Ideathon, you and your team can bring an idea to life and win up to $1,000 in seed funding.</p>
         },
@@ -35,7 +35,7 @@ export default function Events() {
             logo: estimathonLogo,
             logoStyles: { backgroundColor: "white", borderRadius: "100vw" },
             date: "November",
-            href: null,
+            href: "https://estimathon.com",
             image: null,
             children: <p>Show off your problem-solving skills in our math competition! All participants get free Jane Street merch.</p>
         }
