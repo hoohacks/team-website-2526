@@ -3,10 +3,10 @@ import dome from "./dome.svg";
 import stars4 from "./stars/star4.svg";
 import stars5 from "./stars/star5.svg";
 import stars6 from "./stars/star6.svg";
-import { useRef, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import JSX from "react";
 
-function random(seed: React.RefObject<number>) {
+function random(seed: { current: number }) {
   seed.current += 1;
   const x = Math.sin(seed.current) * 10000;
   return x - Math.floor(x);
@@ -16,7 +16,7 @@ export default function Hero() {
   const [starsReady, setStarsReady] = useState(false);
   const [starStyles, setStarStyles] = useState<{ type: number, top: string; left: string; animationDelay: string; animationDuration: string; }[]>([]);
   const [cloudStyles, setCloudStyles] = useState<{ i: number; top: string; left: string; animationDuration: string; animationDelay: string; animationIterationCount: string; }[]>([]);
-  const seed = useRef(6);
+  const seed = { current: 6 };
   const stars = [stars4, stars5, stars6];
 
   // Randomly generate stars
