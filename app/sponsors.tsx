@@ -1,31 +1,77 @@
+import { Link } from "react-router";
 import ScrollingRow from "./components/ScrollingRow";
 import SectionHeader from "./components/SectionHeader";
+import sponsors from "./data/sponsors.json";
+import "react-multi-carousel/lib/styles.css";
+import { lazy, Suspense } from "react";
+
+const Carousel = lazy(() => import('react-multi-carousel'))
+
+function sponsorItem(sponsor: { name: string; logo: string, website: string }) {
+    return (
+        <Link to={sponsor.website} target="_blank" rel="noopener noreferrer">
+            <div key={sponsor.name} className="w-60 h-25 px-8 py-4 rounded-xl bg-white">
+                <img src={sponsor.logo} alt={sponsor.name} className="w-full h-full object-contain" />
+            </div>
+        </Link>
+    );
+}
 
 export default function Sponsors() {
+    const topSponsors = sponsors.slice(0, sponsors.length / 2);
+    const bottomSponsors = sponsors.slice(sponsors.length / 2);
+
+    const responsive = {
+        superLarge: {
+            breakpoint: { max: 4000, min: 3500 },
+            items: 6
+        },
+        large: {
+            breakpoint: { max: 3500, min: 1300 },
+            items: 4
+        },
+        medium: {
+            breakpoint: { max: 1300, min: 900 },
+            items: 2
+        },
+        small: {
+            breakpoint: { max: 900, min: 600 },
+            items: 1
+        },
+        superSmall: {
+            breakpoint: { max: 600, min: 0 },
+            items: 0.5
+        }
+    };
     return (
+        // <div className="w-full mt-16 mb-32">
+        //     <ScrollingRow direction="right">
+        //         {topSponsors.map((sponsor) => (
+        //             <div key={sponsor.name} className="w-50 h-20 px-8 py-4 rounded-md bg-white">
+        //                 <img src={sponsor.logo} alt={sponsor.name} className="w-full h-full object-contain" />
+        //             </div>
+        //         ))}
+        //     </ScrollingRow>
+        //     <div className="py-4"></div>
+        //     <ScrollingRow direction="left">
+        //         {bottomSponsors.map((sponsor) => (
+        //             <div key={sponsor.name} className="w-50 h-20 px-8 py-4 rounded-md bg-white">
+        //                 <img src={sponsor.logo} alt={sponsor.name} className="w-full h-full object-contain" />
+        //             </div>
+        //         ))}
+        //     </ScrollingRow>
+        // </div >
         <div className="w-full mt-16 mb-32">
-            <SectionHeader>Sponsors</SectionHeader>
-            <ScrollingRow direction="right">
-                <div className="w-40 h-30 bg-gray-200"></div>
-                <div className="w-40 h-30 bg-gray-300"></div>
-                <div className="w-40 h-30 bg-gray-400"></div>
-                <div className="w-40 h-30 bg-gray-500"></div>
-                <div className="w-40 h-30 bg-gray-600"></div>
-                <div className="w-40 h-30 bg-gray-700"></div>
-                <div className="w-40 h-30 bg-gray-800"></div>
-                <div className="w-40 h-30 bg-gray-900"></div>
-            </ScrollingRow>
-            <div className="py-4"></div>
-            <ScrollingRow direction="left">
-                <div className="w-40 h-30 bg-gray-200"></div>
-                <div className="w-40 h-30 bg-gray-300"></div>
-                <div className="w-40 h-30 bg-gray-400"></div>
-                <div className="w-40 h-30 bg-gray-500"></div>
-                <div className="w-40 h-30 bg-gray-600"></div>
-                <div className="w-40 h-30 bg-gray-700"></div>
-                <div className="w-40 h-30 bg-gray-800"></div>
-                <div className="w-40 h-30 bg-gray-900"></div>
-            </ScrollingRow>
+            <Suspense>
+                <SectionHeader>Sponsors</SectionHeader>
+                <Carousel responsive={responsive} swipeable={false} draggable={false} ssr={true} infinite={true} autoPlay={true} autoPlaySpeed={0} transitionDuration={10000} customTransition="transform 10000ms linear" arrows={false} centerMode={true}>
+                    {topSponsors.map((sponsor) => sponsorItem(sponsor))}
+                </Carousel>
+                <div className="py-8"></div>
+                <Carousel responsive={responsive} swipeable={false} draggable={false} ssr={true} infinite={true} autoPlay={true} autoPlaySpeed={0} transitionDuration={10000} customTransition="transform 10000ms linear" arrows={false} centerMode={true} rtl={true}>
+                    {bottomSponsors.map((sponsor) => sponsorItem(sponsor))}
+                </Carousel>
+            </Suspense>
         </div>
     );
 }
