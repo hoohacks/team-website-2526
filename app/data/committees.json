@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Marketing",
+        "description": "Drives the creative vision of HooHacks through website design and engaging social media content. Lead outreach initiatives to grow HooHacks."
+    },
+    {
+        "name": "Technology",
+        "description": "Oversees all technology for HooHacks, developing and implementing innovative solutions to enhance club operations."
+    },
+    {
+        "name": "Finance",
+        "description": "Manages over $100,000 in corporate sponsorships and allocates funds for various HooHacks initiatives."
+    },
+    {
+        "name": "Hacker Experience",
+        "description": "Plans the hackathon and other HooHacks events by coordinating with both student-run and professional organizations, managing schedules, food, and prizes. Oversees every detail to ensure the best possible experience for our hackers."
+    },
+    {
+        "name": "External Relations",
+        "description": "Builds partnerships with companies, recruiters, and student organizations to secure sponsorships for HooHacks, increasing the hackathon’s resources and elevating the attendees’ experience."
+    },
+    {
+        "name": "Internal",
+        "description": "Plans and coordinates social events for the entire board, fostering engagement, collaboration, and a sense of community."
+    }
+]

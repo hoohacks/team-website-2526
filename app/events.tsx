@@ -3,6 +3,9 @@ import EventSection from "./components/EventSection";
 import longLogo from "./assets/long-logo.svg";
 import ideathonLogo from "./assets/ideathon-logo.svg";
 import estimathonLogo from "./assets/estimathon-logo.png";
+import hoohacksImage from "./assets/hoohacks.png";
+import ideathonImage from "./assets/ideathon.png";
+import estimathonImage from "./assets/estimathon.png";
 
 export default function Events() {
     const events = [
@@ -11,7 +14,7 @@ export default function Events() {
             logo: longLogo,
             date: "March",
             href: "https://hoohacks.io",
-            image: null,
+            image: hoohacksImage,
             children: (
                 <>
                     <p className="font-bold">850+ participants,  $12,000 in prize money, 100+ projects, 24 hrs</p>
@@ -27,7 +30,7 @@ export default function Events() {
             logo: ideathonLogo,
             date: "October",
             href: "https://ideathon.hoohacks.io",
-            image: null,
+            image: ideathonImage,
             children: <p>Pitch. Collaborate. Win. In just one day at Ideathon, you and your team can bring an idea to life and win up to $1,000 in seed funding.</p>
         },
         {
@@ -36,7 +39,7 @@ export default function Events() {
             logoStyles: { backgroundColor: "white", borderRadius: "100vw" },
             date: "November",
             href: "https://estimathon.com",
-            image: null,
+            image: estimathonImage,
             children: <p>Show off your problem-solving skills in our math competition! All participants get free Jane Street merch.</p>
         }
     ];

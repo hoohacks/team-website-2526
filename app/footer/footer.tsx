@@ -16,11 +16,11 @@ export default function Footer() {
             alt: "Twitter",
             link: "https://twitter.com/hoohacks"
         },
-        {
-            image: discord,
-            alt: "Discord",
-            link: "#"
-        }
+        // {
+        //     image: discord,
+        //     alt: "Discord",
+        //     link: "#"
+        // }
     ];
 
     return (

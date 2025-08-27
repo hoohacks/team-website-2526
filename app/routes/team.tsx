@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import Navbar from "../navbar";
-import teamData from 'app/members.json'
+import teamData from 'app/data/members.json'
 import Footer from "~/footer/footer";
 
 // JSON-like data for all committees
