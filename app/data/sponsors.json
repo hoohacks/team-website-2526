@@ -1,62 +1,62 @@
 [
     {
         "name": "Appian",
-        "logo": "/public/sponsors/appian.svg",
+        "logo": "/sponsors/appian.svg",
         "website": "https://www.appian.com"
     },
     {
         "name": "BoodleBox",
-        "logo": "/public/sponsors/boodlebox.webp",
+        "logo": "/sponsors/boodlebox.webp",
         "website": "https://www.boodlebox.ai"
     },
     {
         "name": "Capital One",
-        "logo": "/public/sponsors/capital-one.svg",
+        "logo": "/sponsors/capital-one.svg",
         "website": "https://www.capitalone.com"
     },
     {
         "name": "CoStar",
-        "logo": "/public/sponsors/costar.png",
+        "logo": "/sponsors/costar.png",
         "website": "https://www.costar.com"
     },
     {
         "name": "Fannie Mae",
-        "logo": "/public/sponsors/fannie-mae.png",
+        "logo": "/sponsors/fannie-mae.png",
         "website": "https://www.fanniemae.com"
     },
     {
         "name": "Geico",
-        "logo": "/public/sponsors/geico.svg",
+        "logo": "/sponsors/geico.svg",
         "website": "https://www.geico.com"
     },
     {
         "name": "IBM",
-        "logo": "/public/sponsors/ibm.svg",
+        "logo": "/sponsors/ibm.svg",
         "website": "https://www.ibm.com"
     },
     {
         "name": "Intel",
-        "logo": "/public/sponsors/intel.svg",
+        "logo": "/sponsors/intel.svg",
         "website": "https://www.intel.com"
     },
     {
         "name": "Jane Street",
-        "logo": "/public/sponsors/jane-street.svg",
+        "logo": "/sponsors/jane-street.svg",
         "website": "https://www.janestreet.com"
     },
     {
         "name": "Kyrus Tech",
-        "logo": "/public/sponsors/kyrus-tech.webp",
+        "logo": "/sponsors/kyrus-tech.webp",
         "website": "https://www.kyrus-tech.com"
     },
     {
         "name": "Leidos",
-        "logo": "/public/sponsors/leidos.svg",
+        "logo": "/sponsors/leidos.svg",
         "website": "https://www.leidos.com"
     },
     {
         "name": "Perplexity",
-        "logo": "/public/sponsors/perplexity.png",
+        "logo": "/sponsors/perplexity.png",
         "website": "https://www.perplexity.ai"
     }
 ]
