@@ -1,62 +1,62 @@
 [
     {
         "name": "Appian",
-        "logo": "app/assets/sponsors/appian.svg",
+        "logo": "/public/sponsors/appian.svg",
         "website": "https://www.appian.com"
     },
     {
         "name": "BoodleBox",
-        "logo": "app/assets/sponsors/boodlebox.webp",
+        "logo": "/public/sponsors/boodlebox.webp",
         "website": "https://www.boodlebox.ai"
     },
     {
         "name": "Capital One",
-        "logo": "app/assets/sponsors/capital-one.svg",
+        "logo": "/public/sponsors/capital-one.svg",
         "website": "https://www.capitalone.com"
     },
     {
         "name": "CoStar",
-        "logo": "app/assets/sponsors/costar.png",
+        "logo": "/public/sponsors/costar.png",
         "website": "https://www.costar.com"
     },
     {
         "name": "Fannie Mae",
-        "logo": "app/assets/sponsors/fannie-mae.png",
+        "logo": "/public/sponsors/fannie-mae.png",
         "website": "https://www.fanniemae.com"
     },
     {
         "name": "Geico",
-        "logo": "app/assets/sponsors/geico.svg",
+        "logo": "/public/sponsors/geico.svg",
         "website": "https://www.geico.com"
     },
     {
         "name": "IBM",
-        "logo": "app/assets/sponsors/ibm.svg",
+        "logo": "/public/sponsors/ibm.svg",
         "website": "https://www.ibm.com"
     },
     {
         "name": "Intel",
-        "logo": "app/assets/sponsors/intel.svg",
+        "logo": "/public/sponsors/intel.svg",
         "website": "https://www.intel.com"
     },
     {
         "name": "Jane Street",
-        "logo": "app/assets/sponsors/jane-street.svg",
+        "logo": "/public/sponsors/jane-street.svg",
         "website": "https://www.janestreet.com"
     },
     {
         "name": "Kyrus Tech",
-        "logo": "app/assets/sponsors/kyrus-tech.webp",
+        "logo": "/public/sponsors/kyrus-tech.webp",
         "website": "https://www.kyrus-tech.com"
     },
     {
         "name": "Leidos",
-        "logo": "app/assets/sponsors/leidos.svg",
+        "logo": "/public/sponsors/leidos.svg",
         "website": "https://www.leidos.com"
     },
     {
         "name": "Perplexity",
-        "logo": "app/assets/sponsors/perplexity.png",
+        "logo": "/public/sponsors/perplexity.png",
         "website": "https://www.perplexity.ai"
     }
 ]

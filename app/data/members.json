@@ -2,49 +2,49 @@
   {
     "committee": "President",
     "members": [
-      { "name": "Austin Trinh", "image": "app/assets/headshots/austin.jpg" }
+      { "name": "Austin Trinh", "image": "/public/headshots/austin.jpg" }
     ]
   },
   {
     "committee": "Technology",
     "members": [
-      { "name": "Urav Tanna", "image": "app/assets/headshots/urav.jpg" },
-      { "name": "Diana Lin", "image": "app/assets/headshots/diana.jpg" }
+      { "name": "Urav Tanna", "image": "/public/headshots/urav.jpg" },
+      { "name": "Diana Lin", "image": "/public/headshots/diana.jpg" }
     ]
   },
   {
     "committee": "Finance",
     "members": [
-      { "name": "Courtney", "image": "app/assets/headshots/courtney.jpg" },
-      { "name": "Christian", "image": "app/assets/headshots/christian.png" }
+      { "name": "Courtney", "image": "/public/headshots/courtney.jpg" },
+      { "name": "Christian", "image": "/public/headshots/christian.png" }
     ]
   },
   {
     "committee": "Marketing",
     "members": [
-      { "name": "Aryaa Deshpande", "image": "app/assets/headshots/aryaa.jpg" },
-      { "name": "Richard Do", "image": "app/assets/headshots/richard.jpg" }
+      { "name": "Aryaa Deshpande", "image": "/public/headshots/aryaa.jpg" },
+      { "name": "Richard Do", "image": "/public/headshots/richard.jpg" }
     ]
   },
   {
     "committee": "Sponsorship",
     "members": [
-      { "name": "Malisha", "image": "app/assets/headshots/malisha.jpg" },
-      { "name": "Jamar", "image": "app/assets/headshots/jamar.jpg" }
+      { "name": "Malisha", "image": "/public/headshots/malisha.jpg" },
+      { "name": "Jamar", "image": "/public/headshots/jamar.jpg" }
     ]
   },
   {
     "committee": "Hacker Experience",
     "members": [
-      { "name": "Salonee", "image": "app/assets/headshots/salonee.jpg" },
-      { "name": "Christy", "image": "app/assets/headshots/christy.jpg" }
+      { "name": "Salonee", "image": "/public/headshots/salonee.jpg" },
+      { "name": "Christy", "image": "/public/headshots/christy.jpg" }
     ]
   },
   {
     "committee": "Internal",
     "members": [
-      { "name": "Christine", "image": "app/assets/headshots/christine.jpg" },
-      { "name": "Jay", "image": "app/assets/headshots/jay.png" }
+      { "name": "Christine", "image": "/public/headshots/christine.jpg" },
+      { "name": "Jay", "image": "/public/headshots/jay.png" }
     ]
   }
 ]

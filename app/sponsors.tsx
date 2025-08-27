@@ -1,5 +1,4 @@
 import { Link } from "react-router";
-import ScrollingRow from "./components/ScrollingRow";
 import SectionHeader from "./components/SectionHeader";
 import sponsors from "./data/sponsors.json";
 import "react-multi-carousel/lib/styles.css";
@@ -44,23 +43,6 @@ export default function Sponsors() {
         }
     };
     return (
-        // <div className="w-full mt-16 mb-32">
-        //     <ScrollingRow direction="right">
-        //         {topSponsors.map((sponsor) => (
-        //             <div key={sponsor.name} className="w-50 h-20 px-8 py-4 rounded-md bg-white">
-        //                 <img src={sponsor.logo} alt={sponsor.name} className="w-full h-full object-contain" />
-        //             </div>
-        //         ))}
-        //     </ScrollingRow>
-        //     <div className="py-4"></div>
-        //     <ScrollingRow direction="left">
-        //         {bottomSponsors.map((sponsor) => (
-        //             <div key={sponsor.name} className="w-50 h-20 px-8 py-4 rounded-md bg-white">
-        //                 <img src={sponsor.logo} alt={sponsor.name} className="w-full h-full object-contain" />
-        //             </div>
-        //         ))}
-        //     </ScrollingRow>
-        // </div >
         <div className="w-full mt-16 mb-32">
             <Suspense>
                 <SectionHeader>Sponsors</SectionHeader>
