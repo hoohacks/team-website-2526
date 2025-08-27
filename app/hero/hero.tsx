@@ -135,7 +135,7 @@ export default function Hero() {
   }, [starElements]);
 
   return (
-    <div className="relative w-full h-screen overflow-x-hidden transition-opacity duration-1000" style={{ opacity: starsReady ? 1 : 0 }}>
+    <div className="relative w-full h-screen overflow-x-hidden transition-opacity duration-1000 select-none" style={{ opacity: starsReady ? 1 : 0 }}>
       <style>
         {cloudKeyframes}
       </style>
