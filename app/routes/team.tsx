@@ -60,14 +60,35 @@ export default function Team() {
 
                 {/* Main content */}
                 <main className="flex-1 p-1 space-y-24">
-                    <h1 className="text-4xl font-bold text-center mb-12">Meet The Team</h1>
+                    <h1 className="text-5xl font-bold text-center mb-12">Meet The Team</h1>
+                    <section
+                        key="President"
+                        id="President"
+                        className="scroll-mt-20"
+                    >
+                        <div className={`grid grid-cols-1 mb-40`}>
+                            <div
+                                key="0"
+                                className="flex flex-col items-center text-center space-y-2"
+                            >
+                                <img
+                                    src={teamData[0].members[0].image}
+                                    alt={teamData[0].members[0].name}
+                                    className="w-45 h-50 object-cover rounded-xl border-2 border-blue-400"
+                                />
+                                <p className="font-medium">{teamData[0].members[0].name}</p>
+                                <p className="text-sm text-gray-400">{teamData[0].committee}</p>
+                            </div>
+                        </div>
+                    </section>
                     {teamData.map((c) => (
+                        c.committee != "President" ?
                         <section
                             key={c.committee}
                             id={c.committee}
                             className="scroll-mt-20"
                         >
-                            <div className="grid grid-cols-2 md:grid-cols-3 gap-6 mb-40">
+                            <div className={`grid grid-cols-2 mb-40`}>
                                 {c.members.map((member, i) => (
                                     <div
                                         key={i}
@@ -83,12 +104,12 @@ export default function Team() {
                                     </div>
                                 ))}
                             </div>
-                        </section>
+                        </section> : ""
                     ))}
                 </main>
 
             </div>
-            <Footer />
+            <Footer/>
         </div>
     );
 }

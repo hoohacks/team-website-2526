@@ -2,51 +2,49 @@
   {
     "committee": "President",
     "members": [
-      { "name": "Austin Trinh", "image": "https://placekitten.com/200/201" },
-      { "name": "?", "image": "https://placekitten.com/200/202" }
+      { "name": "Austin Trinh", "image": "app/assets/headshots/austin.jpg" }
     ]
   },
   {
     "committee": "Technology",
     "members": [
-      { "name": "Urav Tanna", "image": "https://placekitten.com/200/203" },
-      { "name": "Diana Lin", "image": "https://placekitten.com/200/204" },
-      { "name": "Dang Lee", "image": "https://placekitten.com/200/204" }
+      { "name": "Urav Tanna", "image": "app/assets/headshots/urav.jpg" },
+      { "name": "Diana Lin", "image": "app/assets/headshots/diana.jpg" }
     ]
   },
   {
     "committee": "Finance",
     "members": [
-      { "name": "Courtney", "image": "https://placekitten.com/200/205" },
-      { "name": "Christian", "image": "https://placekitten.com/200/205" }
+      { "name": "Courtney", "image": "app/assets/headshots/courtney.jpg" },
+      { "name": "Christian", "image": "app/assets/headshots/christian.png" }
     ]
   },
   {
     "committee": "Marketing",
     "members": [
-      { "name": "Aryaa Deshpande", "image": "https://placekitten.com/200/206" },
-      { "name": "Richard Do", "image": "https://placekitten.com/200/206" }
+      { "name": "Aryaa Deshpande", "image": "app/assets/headshots/aryaa.jpg" },
+      { "name": "Richard Do", "image": "app/assets/headshots/richard.jpg" }
     ]
   },
   {
     "committee": "Sponsorship",
     "members": [
-      { "name": "Malisha", "image": "https://placekitten.com/200/207" },
-      { "name": "Jamar", "image": "https://placekitten.com/200/207" }
+      { "name": "Malisha", "image": "app/assets/headshots/malisha.jpg" },
+      { "name": "Jamar", "image": "app/assets/headshots/jamar.jpg" }
     ]
   },
   {
     "committee": "Hacker Experience",
     "members": [
-      { "name": "Salonee", "image": "https://placekitten.com/200/208" },
-      { "name": "Christie", "image": "https://placekitten.com/200/208" }
+      { "name": "Salonee", "image": "app/assets/headshots/salonee.jpg" },
+      { "name": "Christy", "image": "app/assets/headshots/christy.jpg" }
     ]
   },
   {
     "committee": "Internal",
     "members": [
-      { "name": "Christine", "image": "https://placekitten.com/200/208" },
-      { "name": "Jay", "image": "https://placekitten.com/200/208" }
+      { "name": "Christine", "image": "app/assets/headshots/christine.jpg" },
+      { "name": "Jay", "image": "app/assets/headshots/jay.png" }
     ]
   }
 ]
