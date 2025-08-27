@@ -2,7 +2,7 @@ import { Link } from "react-router";
 import SectionHeader from "./components/SectionHeader";
 import sponsors from "./data/sponsors.json";
 import "react-multi-carousel/lib/styles.css";
-import { lazy, Suspense } from "react";
+import { lazy, Suspense, type JSX } from "react";
 
 const Carousel = lazy(() => import('react-multi-carousel'))
 
@@ -16,10 +16,7 @@ function sponsorItem(sponsor: { name: string; logo: string, website: string }) {
     );
 }
 
-export default function Sponsors() {
-    const topSponsors = sponsors.slice(0, sponsors.length / 2);
-    const bottomSponsors = sponsors.slice(sponsors.length / 2);
-
+function makeCarousel(items: JSX.Element[], rtl: boolean) {
     const responsive = {
         superLarge: {
             breakpoint: { max: 4000, min: 3500 },
@@ -42,17 +39,25 @@ export default function Sponsors() {
             items: 0.5
         }
     };
+
+    return (
+        <Carousel responsive={responsive} swipeable={false} draggable={false} ssr={false} infinite={true} autoPlay={true} autoPlaySpeed={2000} transitionDuration={500} arrows={false} centerMode={true} rtl={rtl}>
+            {items}
+        </Carousel>
+    );
+}
+
+export default function Sponsors() {
+    const topSponsors = sponsors.slice(0, sponsors.length / 2);
+    const bottomSponsors = sponsors.slice(sponsors.length / 2);
+
     return (
         <div className="w-full mt-16 mb-32">
             <Suspense>
                 <SectionHeader>Sponsors</SectionHeader>
-                <Carousel responsive={responsive} swipeable={false} draggable={false} ssr={true} infinite={true} autoPlay={true} autoPlaySpeed={0} transitionDuration={10000} customTransition="transform 10000ms linear" arrows={false} centerMode={true}>
-                    {topSponsors.map((sponsor) => sponsorItem(sponsor))}
-                </Carousel>
+                {makeCarousel(topSponsors.map((sponsor) => sponsorItem(sponsor)), false)}
                 <div className="py-8"></div>
-                <Carousel responsive={responsive} swipeable={false} draggable={false} ssr={true} infinite={true} autoPlay={true} autoPlaySpeed={0} transitionDuration={10000} customTransition="transform 10000ms linear" arrows={false} centerMode={true} rtl={true}>
-                    {bottomSponsors.map((sponsor) => sponsorItem(sponsor))}
-                </Carousel>
+                {makeCarousel(bottomSponsors.map((sponsor) => sponsorItem(sponsor)), true)}
             </Suspense>
         </div>
     );
