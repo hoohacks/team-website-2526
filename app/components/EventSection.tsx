@@ -4,7 +4,7 @@ export default function EventSection({ children, title, date, logo, href, image,
     return (
         <Link to={href}>
             <div className="p-12 rounded-lg" style={{ background: "linear-gradient(83.38deg, rgba(0, 4, 45, 0.35) 0.63%, rgba(135, 162, 252, 0.5) 96.67%)" }}>
-                <div className="flex gap-12">
+                <div className="flex gap-12 md:flex-row flex-col">
                     <div className="flex-4">
                         <img src={logo} alt={`${title}`} className="w-80 my-10" style={{ ...logoStyles }} />
                         <div>
