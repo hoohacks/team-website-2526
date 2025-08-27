@@ -35,7 +35,7 @@ export default function Team() {
 
     return (
         <div>
-            <div className="flex min-h-screen bg-transparent text-white mx-20 my-30">
+            <div className="flex min-h-screen bg-transparent text-white mx-0 sm:mx-20 my-30">
                 <Navbar />
 
                 {/* Sidebar */}
@@ -88,7 +88,7 @@ export default function Team() {
                             id={c.committee}
                             className="scroll-mt-20"
                         >
-                            <div className={`grid grid-cols-2 mb-40`}>
+                            <div className={`grid grid-cols-1 md:grid-cols-2 mb-40`}>
                                 {c.members.map((member, i) => (
                                     <div
                                         key={i}
