@@ -13,7 +13,7 @@ export default function Events() {
             title: "HooHacks",
             logo: longLogo,
             date: "March",
-            href: "https://hoohacks.io",
+            href: "https://hoohacks.io/#",
             image: hoohacksImage,
             children: (
                 <>

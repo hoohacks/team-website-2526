@@ -18,7 +18,7 @@ export default function Join() {
                                 typically open
                                 for two weeks before interviews begin. No prior experience is required to apply!
                             </p>
-                            <a href="">
+                            <a href="https://forms.cloud.microsoft/r/jXLg61qRTb">
                                 <button
                                     className="w-40 px-6 py-3 rounded-lg bg-[#B1CCFF] text-black font-semibold hover:bg-blue-500 transition">
                                     Join
