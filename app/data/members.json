@@ -25,11 +25,11 @@
     "committee": "Finance",
     "members": [
       {
-        "name": "Courtney",
+        "name": "Courtney Rodig",
         "image": "/headshots/courtney.jpg"
       },
       {
-        "name": "Christian",
+        "name": "Christian Min",
         "image": "/headshots/christian.png"
       }
     ]
@@ -51,11 +51,11 @@
     "committee": "Sponsorship",
     "members": [
       {
-        "name": "Malisha",
+        "name": "Malisha Das",
         "image": "/headshots/malisha.jpg"
       },
       {
-        "name": "Jamar",
+        "name": "Jamar Oldacre",
         "image": "/headshots/jamar.jpg"
       }
     ]
@@ -64,11 +64,11 @@
     "committee": "Hacker Experience",
     "members": [
       {
-        "name": "Salonee",
+        "name": "Salonee Verma",
         "image": "/headshots/salonee.jpg"
       },
       {
-        "name": "Christy",
+        "name": "Christy Lee",
         "image": "/headshots/christy.jpg"
       }
     ]
@@ -77,11 +77,11 @@
     "committee": "Internal",
     "members": [
       {
-        "name": "Christine",
+        "name": "Christine Han",
         "image": "/headshots/christine.jpg"
       },
       {
-        "name": "Jay",
+        "name": "Jay Sikka",
         "image": "/headshots/jay.png"
       }
     ]
