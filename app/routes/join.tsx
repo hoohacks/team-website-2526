@@ -6,7 +6,7 @@ export default function Join() {
     return (
         <>
             <div className="min-h-screen bg-transparent text-white flex flex-col">
-                <Navbar/>
+                <Navbar />
 
                 <div className="flex flex-1 items-center justify-center px-6 mt-30">
                     <div className="max-w-2xl text-center space-y-12">
@@ -14,9 +14,8 @@ export default function Join() {
                         <div className="space-y-6">
                             <h1 className="text-5xl font-bold">Fall Recruitment</h1>
                             <p className="text-lg text-gray-300">
-                                Our recruitment begins in <span className="font-semibold">September</span> and is
-                                typically open
-                                for two weeks before interviews begin. No prior experience is required to apply!
+                                Our recruitment begins <span className="font-semibold">now</span> and is
+                                open until <span className="font-semibold">September 5</span>, after which interviews begin. No prior experience is required to apply!
                             </p>
                             <a href="https://forms.cloud.microsoft/r/jXLg61qRTb">
                                 <button
@@ -42,7 +41,7 @@ export default function Join() {
                     </div>
                 </div>
             </div>
-            <Footer/>
+            <Footer />
         </>
     );
 }
