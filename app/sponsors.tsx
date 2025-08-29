@@ -47,15 +47,16 @@ function makeCarousel(items: JSX.Element[], rtl: boolean) {
             draggable={false}
             infinite={true}
             autoPlay={true}
-            autoPlaySpeed={1}
-            pauseOnHover
+            autoPlaySpeed={0}
+            pauseOnHover={false}
             additionalTransfrom={0}
             focusOnSelect={false}
-            customTransition="transform 1s linear"
-            transitionDuration={1000}
+            customTransition="transform 3s linear"
+            transitionDuration={3000}
             arrows={false}
             centerMode={true}
             rtl={rtl}
+            rewindWithAnimation={false}
         >
             {items}
         </Carousel>
