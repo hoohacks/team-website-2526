@@ -41,7 +41,22 @@ function makeCarousel(items: JSX.Element[], rtl: boolean) {
     };
 
     return (
-        <Carousel responsive={responsive} swipeable={false} draggable={false} infinite={true} autoPlay={true} autoPlaySpeed={2000} transitionDuration={500} arrows={false} centerMode={true} rtl={rtl}>
+        <Carousel
+            responsive={responsive}
+            swipeable={false}
+            draggable={false}
+            infinite={true}
+            autoPlay={true}
+            autoPlaySpeed={1}
+            pauseOnHover
+            additionalTransfrom={0}
+            focusOnSelect={false}
+            customTransition="transform 1s linear"
+            transitionDuration={1000}
+            arrows={false}
+            centerMode={true}
+            rtl={rtl}
+        >
             {items}
         </Carousel>
     );
