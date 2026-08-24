@@ -17,9 +17,9 @@ export default function Join() {
                             <h1 className="text-4xl sm:text-5xl font-bold text-balance bg-linear-to-b from-white to-[#B1CCFF] bg-clip-text text-transparent">Fall Recruitment</h1>
                             <p className="text-lg text-white/80">
                                 Our recruitment begins <span className="font-semibold text-white">now</span> and is
-                                open until <span className="font-semibold text-white">September 5</span>, after which interviews begin. No prior experience is required to apply!
+                                open until <span className="font-semibold text-white">September 4</span>, after which interviews begin. No prior experience is required to apply!
                             </p>
-                            <Button href="https://forms.cloud.microsoft/r/jXLg61qRTb" className="w-40">Apply</Button>
+                            <Button href="https://forms.cloud.microsoft/r/As7Gzt0hAc" className="w-40">Apply</Button>
                         </Reveal>
 
                         {/* Newsletter Section */}
