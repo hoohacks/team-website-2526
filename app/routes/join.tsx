@@ -3,6 +3,11 @@ import Footer from "app/footer/footer"
 import Button from "app/components/Button";
 import Reveal from "app/components/Reveal";
 
+/** Interest meeting deck, shared view-only from Drive. Swap this ID each fall.
+ *  The `ouid` and `rtpof` params on the Drive share link are the owner's account
+ *  state, not the file, so they're dropped here. */
+const SLIDES_ID = "1lw58XYEMH4_qsStbhQwwztiqnGrAOBpw";
+const SLIDES_VIEW_URL = `https://docs.google.com/presentation/d/${SLIDES_ID}/preview`;
 
 export default function Join() {
     return (
@@ -22,8 +27,18 @@ export default function Join() {
                             <Button href="https://forms.cloud.microsoft/r/As7Gzt0hAc" className="w-40">Apply</Button>
                         </Reveal>
 
+                        {/* Interest Meeting Slides — linked rather than embedded. The
+                            deck is an uploaded .pptx, and Google's conversion clips
+                            overflowing text in the inline player; the full Slides view
+                            has the room to lay it out properly. */}
+                        <Reveal delay={150} className="space-y-6 mt-30">
+                            <h2 className="text-4xl sm:text-5xl font-bold text-balance bg-linear-to-b from-white to-[#B1CCFF] bg-clip-text text-transparent">Interest Meeting Slides</h2>
+                            <p className="text-lg text-white/80">Couldn't make it? Here's the full deck from our fall interest meeting.</p>
+                            <Button href={SLIDES_VIEW_URL} target="_blank" className="w-40">View Slides</Button>
+                        </Reveal>
+
                         {/* Newsletter Section */}
-                        <Reveal delay={150} className="space-y-6 mt-30 mb-30">
+                        <Reveal delay={300} className="space-y-6 mt-30 mb-30">
                             <h2 className="text-4xl sm:text-5xl font-bold text-balance bg-linear-to-b from-white to-[#B1CCFF] bg-clip-text text-transparent">Subscribe to our Newsletter</h2>
                             <p className="text-lg text-white/80">Join our newsletter to get the latest HooHacks news, events, and opportunities.</p>
                             <Button href="https://hoohacks.us17.list-manage.com/subscribe?u=8db3fa0f566f9edea113259df&id=b74b5fd33d" className="w-40">Subscribe</Button>
