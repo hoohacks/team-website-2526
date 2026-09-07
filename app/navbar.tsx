@@ -1,20 +1,15 @@
 import { Link } from "react-router";
 import hoohacksOwlLogo from "~/assets/hoohacks-owl-logo.svg";
 import Button from "~/components/Button";
-
-/** Recruiting switches the bar's one button from Join to Apply. Flip to false
- *  when applications close and the bar reverts to its off-season state. */
-const RECRUITING = true;
-const APPLY_FORM_URL = "https://forms.cloud.microsoft/r/As7Gzt0hAc";
-/** Set to a date string (e.g. "Sep 5") to make the CTA read "Apply by Sep 5"
- *  once the deadline is locked in. Null keeps it to the plain action. */
-const APPLY_DEADLINE: string | null = "Sep 4";
+import { RECRUITING, APPLY_FORM_URL, APPLY_DEADLINE, JOIN_LINK_LABEL } from "~/recruiting";
 
 export default function Navbar() {
     // `short` keeps every link reachable on a phone instead of hiding one.
+    // Off-season the CTA itself leads to /join, so listing it here too would
+    // put the same destination in the bar twice.
     const navItems = [
         { name: "Meet The Team", short: "Team", href: "/team" },
-        { name: "Join", short: "Join", href: "/join" },
+        ...(RECRUITING ? [{ name: "Join", short: "Join", href: "/join" }] : []),
     ];
 
     return (
@@ -41,8 +36,10 @@ export default function Navbar() {
                         ))}
                     </ul>
 
-                    {/* Recruiting CTA — the bar's only button while apps are open.
-                        The starlight glow makes it read as lit against the sky. */}
+                    {/* The bar's one button: the application while it's open,
+                        the newsletter the rest of the year. The starlight glow
+                        is in-season only — off-season it's an ordinary link,
+                        not something to hurry anyone toward. */}
                     {RECRUITING ? (
                         <Button
                             href={APPLY_FORM_URL}
@@ -54,12 +51,14 @@ export default function Navbar() {
                             {APPLY_DEADLINE && (
                                 /* The deadline is the urgency; it drops on the
                                    narrowest phones where the bar can't hold it. */
-                                <span className="hidden min-[360px]:inline">{` by ${APPLY_DEADLINE}`}</span>
+                                <span className="hidden min-[360px]:inline">{` by ${APPLY_DEADLINE}`}</span>
                             )}
                             <span className="sr-only"> (opens in a new tab)</span>
                         </Button>
                     ) : (
-                        <Button to="/join" size="sm">Join</Button>
+                        <Button to="/join" size="sm" className="whitespace-nowrap text-sm sm:text-base">
+                            {JOIN_LINK_LABEL}
+                        </Button>
                     )}
                 </div>
             </div>

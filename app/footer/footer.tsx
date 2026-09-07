@@ -3,6 +3,7 @@ import instagram from "./instagram.svg";
 import twitter from "./twitter.svg";
 import discord from "./discord.svg";
 import { Link } from "react-router";
+import { JOIN_LINK_LABEL } from "../recruiting";
 
 export default function Footer() {
     const socials = [
@@ -28,7 +29,7 @@ export default function Footer() {
         { name: "Committees", to: "/#committees" },
         { name: "Sponsors", to: "/#sponsors" },
         { name: "Team", to: "/team" },
-        { name: "Join", to: "/join" }
+        { name: JOIN_LINK_LABEL, to: "/join" }
     ];
 
     return (
